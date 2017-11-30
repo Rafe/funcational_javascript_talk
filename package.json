@@ -1,0 +1,27 @@
+{
+  "name": "functional_javascript_talk",
+  "version": "1.0.0",
+  "description": "Funcational Javascript presentation",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rafe/funcational_javascript_talk.git"
+  },
+  "author": "Jimmy Chao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rafe/funcational_javascript_talk/issues"
+  },
+  "homepage": "https://github.com/Rafe/funcational_javascript_talk#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "lodash.compose": "^2.4.1",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
