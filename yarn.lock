@@ -321,16 +321,6 @@ babel-plugin-syntax-object-rest-spread@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
 
-babel-plugin-syntax-pipeline-operator@7.0.0-beta.3:
-  version "7.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-pipeline-operator/-/babel-plugin-syntax-pipeline-operator-7.0.0-beta.3.tgz#f8d17f9d5fdf8a515c0d5a33d2483665575bdf9d"
-
-babel-plugin-syntax-pipeline@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-pipeline/-/babel-plugin-syntax-pipeline-0.1.0.tgz#cdc4e79c9cd73d5339f658828982e50d3ab5c2f0"
-  dependencies:
-    babylon "6.13.0"
-
 babel-plugin-syntax-trailing-function-commas@^6.22.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-6.22.0.tgz#ba0360937f8d06e40180a43fe0d5616fff532cf3"
@@ -582,18 +572,6 @@ babel-plugin-transform-object-rest-spread@^6.22.0:
     babel-plugin-syntax-object-rest-spread "^6.8.0"
     babel-runtime "^6.26.0"
 
-babel-plugin-transform-pipeline-operator@^7.0.0-beta.3:
-  version "7.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-pipeline-operator/-/babel-plugin-transform-pipeline-operator-7.0.0-beta.3.tgz#5e9c36c1b8e769394165546fe0bd3eeaa2e5b88e"
-  dependencies:
-    babel-plugin-syntax-pipeline-operator "7.0.0-beta.3"
-
-babel-plugin-transform-pipeline@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-pipeline/-/babel-plugin-transform-pipeline-0.1.0.tgz#4a8ab124412a89b793c51c339f75eee8692e5d78"
-  dependencies:
-    babel-plugin-syntax-pipeline "0.1.0"
-
 babel-plugin-transform-regenerator@^6.24.1:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-regenerator/-/babel-plugin-transform-regenerator-6.26.0.tgz#e0703696fbde27f0a3efcacf8b4dca2f7b3a8f2f"
@@ -730,10 +708,6 @@ babel-types@^6.19.0, babel-types@^6.24.1, babel-types@^6.26.0:
     esutils "^2.0.2"
     lodash "^4.17.4"
     to-fast-properties "^1.0.3"
-
-babylon@6.13.0:
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.13.0.tgz#58ed40dd2a8120612be5f318c2c0bedbebde4a0b"
 
 babylon@^6.18.0:
   version "6.18.0"
@@ -946,6 +920,10 @@ fill-range@^2.1.0:
     randomatic "^1.1.3"
     repeat-element "^1.1.2"
     repeat-string "^1.5.2"
+
+folktale@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/folktale/-/folktale-2.0.1.tgz#6dc26a65565aefdef9520223e022dddf5b8d8462"
 
 for-in@^1.0.1:
   version "1.0.2"

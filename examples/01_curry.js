@@ -12,3 +12,22 @@ const curryN = (func, received = []) => {
     return curryN(func, props)
   }
 }
+
+// create api action
+
+const fetch = require('isomorphic-fetch')
+const fetchGoogle = curry2(fetch)('http://google.com')
+
+// create add6
+
+const add = (a, b) => a + b
+
+const add6 = curry2(add)(6)
+
+// match
+
+const match(pattern, str) => {
+  str.match(pattern)
+}
+
+const isBeansauce = curry(match)('beansauce')

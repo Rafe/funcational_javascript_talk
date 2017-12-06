@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/Rafe/funcational_javascript_talk#readme",
   "dependencies": {
+    "folktale": "^2.0.1",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
     "lodash.compose": "^2.4.1",

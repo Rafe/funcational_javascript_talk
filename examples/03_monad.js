@@ -4,45 +4,48 @@ class Container {
   }
 
   static of(value) {
-    return new this.prototype.constructor(value)
+    return new Container(value)
+  }
+
+  get isMonad() {
+    return true
   }
 
   map(func) {
-    return this.prototype.constructor.of(func(this.value)).join()
+    return Container.of(func(this.value)).join()
   }
 
   join() {
-    if (this.value && this.value.constructor === this.prototype.constructor) {
+    if (this.value && this.value.isMonad) {
       return this.value
     }
     return this
   }
 }
 
-class Maybe extends Container {
-  map(func) {
-    return !this.value ? this : super.map(func)
+class Maybe {
+  constructor(value) {
+    this.value = value
   }
-}
 
-class Left extends Container {
+  static of(value) {
+    return new Maybe(value)
+  }
+
+  get isMonad() {
+    return true
+  }
+
   map(func) {
-    if (this.value === 'errors') {
-      return this
+    if (!this.value) return this
+
+    return Maybe.of(func(this.value)).join()
+  }
+
+  join() {
+    if (this.value && this.value.isMonad) {
+      return this.value
     }
-
-    return super.map(func)
+    return this
   }
 }
-
-class Right extends Container {
-  map(func) {
-    return super.map(func)
-  }
-}
-
-function validateName(name) {
-  return name.length > 5 ? Right.of(name) : Left.of('name is too long')
-}
-
-console.log(Right.of('test test test').map(validateName))
