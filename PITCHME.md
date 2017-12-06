@@ -233,5 +233,3 @@ Right.of(form).map(validateForm).map(signIn)
 ### Make JavaScript Great Again !!!
 
 ![JAGA](assets/jaga.png)
-
----
