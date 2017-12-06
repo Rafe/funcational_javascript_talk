@@ -22,7 +22,7 @@ class Right {
   }
 
   map(func) {
-    return Right.of(func(this.value)).join()
+    return Right.of(func(this.value))
   }
 }
 
