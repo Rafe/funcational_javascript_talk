@@ -52,7 +52,7 @@
 
 ### Imperative vs Declarative
 
-[picture of details]
+![i-vs-d](assets/declarative-imperative.png)
 
 ---
 
@@ -196,6 +196,8 @@ Container.of("bean").map((value) => value + "sauce!")
 // => Container(beansauce!)
 ```
 
+---
+
 ### Monad
 
 ```js
@@ -228,7 +230,7 @@ Right.of(form).map(validateForm).map(signIn)
 
 ---
 
-## Make JavaScript Great Again !!!
+### Make JavaScript Great Again !!!
 
 ![JAGA](assets/jaga.png)
 
