@@ -114,9 +114,9 @@ const authenticate = (form) =>
 // declarative with higher-order function
 
 const authenticate = compose(
-  validateForm,
-  toUser,
   signIn,
+  toUser,
+  validateForm,
 )
 ```
 
@@ -134,7 +134,7 @@ const authenticate = compose(
 
 + Curry
 + Compose
-+ Nomad
++ Monad
  
 ---
 
