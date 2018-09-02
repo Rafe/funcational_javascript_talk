@@ -1,4 +1,4 @@
-# Funcational Javascript Talk
+# Functional Javascript Talk
 
 ## Why do we need this talk?
 
